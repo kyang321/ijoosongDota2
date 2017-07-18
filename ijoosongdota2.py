@@ -100,6 +100,5 @@ while True:
 	#Notifications
 	if time_difference < 0.5:
 		#send email to text
-		#text to Ra
 		server.sendmail('Enter Gmail Account', 'Enter Recipients Number', '\n' + 'Last game played: ' + time_difference + ' hours ago' + '\n' + 'Game started on: ' + local_time + '\n' + 'Joe\'s Team: ' + team + '\n' + 'Joe\'s hero: ' + hero_picked + '\n' + 'Joe\'s Deathcount: ' + death_count + '\n' + 'Winner: ' + results + '\n' + 'Joe\'s Solo MMR: ' + mmr)
 	time.sleep(1800 - time.time() % 1800)
