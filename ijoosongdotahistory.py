@@ -20,8 +20,8 @@ hero_pick = []
 deaths = []
 results = []
 
-match_number = 0
-while match_number < number_of_matches:
+
+for match_number in xrange(number_of_matches):
 	match_id.append(match_history['matches'][match_number]['match_id'])
 	
 	#List of Match Details
@@ -53,7 +53,6 @@ while match_number < number_of_matches:
 	else:
 		results.append('Dire')
 	
-	match_number += 1
 
 df = pd.DataFrame(list(zip(match_id, team, hero_pick, deaths, results)), columns=['Match ID', 'Team', 'Hero Picked', 'Deaths', 'Results'])
 df.to_csv('ijoosong.csv', index=False)
