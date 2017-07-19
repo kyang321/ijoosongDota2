@@ -7,7 +7,7 @@ steamID3 = 35709316
 steamID64 = 76561197995975044
 
 #Valve API Key
-api = dota2api.Initialise("4E5BBAAD2B89FD34CE4B4EF4C4649A77")
+api = dota2api.Initialise("Enter Valve API Key")
 
 #ijoosong's Match History
 match_history = api.get_match_history(account_id=steamID64)
